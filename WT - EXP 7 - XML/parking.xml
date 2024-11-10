@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="parking.xsl"?>
+<parkingSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="parking.xsd">
+
+    <parkingLot>
+        <lotID>AB101</lotID>
+        <lotName>Main Street Lot</lotName>
+        <capacity>200</capacity>
+        <occupied>120</occupied>
+        <available>80</available>
+        <location>Main Street, Downtown</location>
+        <ratePerHour>2.00</ratePerHour>
+        <securityLevel>High</securityLevel>
+        <type>Public</type>
+        <operationalHours>24/7</operationalHours>
+        <contactNumber>1234567890</contactNumber>
+    </parkingLot>
+
+    <parkingLot>
+        <lotID>CD202</lotID>
+        <lotName>Park Avenue Lot</lotName>
+        <capacity>300</capacity>
+        <occupied>150</occupied>
+        <available>150</available>
+        <location>Park Avenue, Uptown</location>
+        <ratePerHour>1.50</ratePerHour>
+        <securityLevel>Medium</securityLevel>
+        <type>Private</type>
+        <operationalHours>6:00 - 22:00</operationalHours>
+        <contactNumber>0987654321</contactNumber>
+    </parkingLot>
+
+    <parkingLot>
+        <lotID>EF303</lotID>
+        <lotName>Sunset Boulevard Lot</lotName>
+        <capacity>250</capacity>
+        <occupied>100</occupied>
+        <available>150</available>
+        <location>Sunset Boulevard, West End</location>
+        <ratePerHour>3.00</ratePerHour>
+        <securityLevel>High</securityLevel>
+        <type>Public</type>
+        <operationalHours>24/7</operationalHours>
+        <contactNumber>1122334455</contactNumber>
+    </parkingLot>
+
+    <parkingLot>
+        <lotID>GH404</lotID>
+        <lotName>Ocean Drive Lot</lotName>
+        <capacity>400</capacity>
+        <occupied>350</occupied>
+        <available>50</available>
+        <location>Ocean Drive, Coastal Area</location>
+        <ratePerHour>2.50</ratePerHour>
+        <securityLevel>Low</securityLevel>
+        <type>Private</type>
+        <operationalHours>7:00 - 23:00</operationalHours>
+        <contactNumber>6677889900</contactNumber>
+    </parkingLot>
+
+    <parkingLot>
+        <lotID>IJ505</lotID>
+        <lotName>Central Park Lot</lotName>
+        <capacity>150</capacity>
+        <occupied>80</occupied>
+        <available>70</available>
+        <location>Central Park, Midtown</location>
+        <ratePerHour>2.75</ratePerHour>
+        <securityLevel>Medium</securityLevel>
+        <type>Public</type>
+        <operationalHours>5:00 - 22:00</operationalHours>
+        <contactNumber>9988776655</contactNumber>
+    </parkingLot>
+
+    <parkingLot>
+        <lotID>KL606</lotID>
+        <lotName>Elm Street Lot</lotName>
+        <capacity>180</capacity>
+        <occupied>130</occupied>
+        <available>50</available>
+        <location>Elm Street, Suburbia</location>
+        <ratePerHour>1.80</ratePerHour>
+        <securityLevel>High</securityLevel>
+        <type>Private</type>
+        <operationalHours>6:00 - 20:00</operationalHours>
+        <contactNumber>4455667788</contactNumber>
+    </parkingLot>
+
+    <parkingLot>
+        <lotID>MN707</lotID>
+        <lotName>Highway 45 Lot</lotName>
+        <capacity>350</capacity>
+        <occupied>300</occupied>
+        <available>50</available>
+        <location>Highway 45, Outskirts</location>
+        <ratePerHour>1.50</ratePerHour>
+        <securityLevel>Low</securityLevel>
+        <type>Public</type>
+        <operationalHours>24/7</operationalHours>
+        <contactNumber>3344556677</contactNumber>
+    </parkingLot>
+
+    <parkingLot>
+        <lotID>OP808</lotID>
+        <lotName>Maple Grove Lot</lotName>
+        <capacity>100</capacity>
+        <occupied>60</occupied>
+        <available>40</available>
+        <location>Maple Grove, Suburbia</location>
+        <ratePerHour>2.20</ratePerHour>
+        <securityLevel>High</securityLevel>
+        <type>Public</type>
+        <operationalHours>6:00 - 22:00</operationalHours>
+        <contactNumber>5566778899</contactNumber>
+    </parkingLot>
+
+    <parkingLot>
+        <lotID>QR909</lotID>
+        <lotName>Riverside Lot</lotName>
+        <capacity>120</capacity>
+        <occupied>100</occupied>
+        <available>20</available>
+        <location>Riverside Drive, Downtown</location>
+        <ratePerHour>2.50</ratePerHour>
+        <securityLevel>Medium</securityLevel>
+        <type>Private</type>
+        <operationalHours>8:00 - 22:00</operationalHours>
+        <contactNumber>7788990011</contactNumber>
+    </parkingLot>
+</parkingSystem>
+

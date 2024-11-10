@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map with External Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Image Map</h1>
+    <p>Click on the different parts of the image to visit external websites.</p>
+    
+    <!-- Embed the image map -->
+    <img src="background.jpg" usemap="#image-map" alt="Interactive Image" style="max-width: 100%; height: auto;">
+    
+    <map name="image-map">
+        <!-- Define the hot spots with external links -->
+        <area shape="rect" coords="34,44,270,350" alt="Google" href="https://www.google.com" target="_blank">
+        <area shape="circle" coords="337,300,44" alt="YouTube" href="https://www.youtube.com" target="_blank">
+        <area shape="poly" coords="290,172,333,250,325,185" alt="Wikipedia" href="https://www.wikipedia.org" target="_blank">
+    </map>
+</body>
+</html>

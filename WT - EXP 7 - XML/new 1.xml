@@ -1,0 +1,92 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<title>Parking Management System</title>
+<style>
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+                table, th, td {
+                    border: 1px solid black;
+                }
+                th, td {
+                    padding: 8px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #f2f2f2;
+                }
+            </style>
+</head>
+<body>
+<h2>Parking Management System</h2>
+<table>
+<tr>
+<th>Lot ID</th>
+<th>Lot Name</th>
+<th>Capacity</th>
+<th>Occupied</th>
+<th>Available</th>
+<th>Location</th>
+<th>Rate/Hour</th>
+<th>Security Level</th>
+<th>Type</th>
+<th>Operational Hours</th>
+<th>Contact Number</th>
+</tr>
+<tr>
+<td>AB101</td>
+<td>Main Street Lot</td>
+<td>200</td>
+<td>120</td>
+<td>80</td>
+<td>Main Street, Downtown</td>
+<td>2.00</td>
+<td>High</td>
+<td>Public</td>
+<td>24/7</td>
+<td>1234567890</td>
+</tr>
+<tr>
+<td>EF303</td>
+<td>Sunset Boulevard Lot</td>
+<td>250</td>
+<td>100</td>
+<td>150</td>
+<td>Sunset Boulevard, West End</td>
+<td>3.00</td>
+<td>High</td>
+<td>Public</td>
+<td>24/7</td>
+<td>1122334455</td>
+</tr>
+<tr>
+<td>KL606</td>
+<td>Elm Street Lot</td>
+<td>180</td>
+<td>130</td>
+<td>50</td>
+<td>Elm Street, Suburbia</td>
+<td>1.80</td>
+<td>High</td>
+<td>Private</td>
+<td>6:00 - 20:00</td>
+<td>4455667788</td>
+</tr>
+<tr>
+<td>OP808</td>
+<td>Maple Grove Lot</td>
+<td>100</td>
+<td>60</td>
+<td>40</td>
+<td>Maple Grove, Suburbia</td>
+<td>2.20</td>
+<td>High</td>
+<td>Public</td>
+<td>6:00 - 22:00</td>
+<td>5566778899</td>
+</tr>
+</table>
+</body>
+</html>

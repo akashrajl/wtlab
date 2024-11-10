@@ -1,0 +1,125 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="parkingSystem">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="parkingLot" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- Restriction: Exactly 5 characters, two uppercase letters followed by three digits -->
+                            <xs:element name="lotID">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[A-Z]{2}[0-9]{3}"/>
+                                        <xs:length value="5"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <!-- Restriction: Lot name must be between 5 and 50 characters -->
+                            <xs:element name="lotName">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="5"/>
+                                        <xs:maxLength value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <!-- Restriction: Capacity between 10 and 1000 -->
+                            <xs:element name="capacity">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minInclusive value="10"/>
+                                        <xs:maxInclusive value="1000"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <!-- Restriction: Occupied spaces must be between 0 and the capacity -->
+                            <xs:element name="occupied">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minInclusive value="0"/>
+                                        <xs:maxInclusive value="1000"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <!-- Restriction: Available spaces calculated as capacity minus occupied -->
+                            <xs:element name="available">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minInclusive value="0"/>
+                                        <xs:maxInclusive value="1000"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <!-- Restriction: Location must be between 5 and 100 characters -->
+                            <xs:element name="location">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="5"/>
+                                        <xs:maxLength value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <!-- Restriction: Rate per hour between 0.50 and 10.00 -->
+                            <xs:element name="ratePerHour">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                        <xs:minInclusive value="0.50"/>
+                                        <xs:maxInclusive value="10.00"/>
+                                        <xs:fractionDigits value="2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <!-- Restriction: Security level can only be Low, Medium, or High -->
+                            <xs:element name="securityLevel">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Low"/>
+                                        <xs:enumeration value="Medium"/>
+                                        <xs:enumeration value="High"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <!-- Restriction: Type can only be Public or Private -->
+                            <xs:element name="type">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Public"/>
+                                        <xs:enumeration value="Private"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <!-- Restriction: Operational hours must follow the pattern 24/7 or 'HH:MM - HH:MM' -->
+                            <xs:element name="operationalHours">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern      value="24/7|([0-9]{1,2}:[0-9]{2})\s?-\s?([0-9]{1,2}:[0-9]{2})"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <!-- Restriction: Contact number must be exactly 10 digits -->
+                            <xs:element name="contactNumber">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{10}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,37 @@
+<employees>
+    <employee>
+        <id>101</id>
+        <name>John Doe</name>
+        <role>Developer</role>
+        <department>Engineering</department>
+        <salary>60000</salary>
+    </employee>
+    <employee>
+        <id>102</id>
+        <name>Jane Smith</name>
+        <role>Manager</role>
+        <department>Marketing</department>
+        <salary>75000</salary>
+    </employee>
+    <employee>
+        <id>103</id>
+        <name>Robert Brown</name>
+        <role>Analyst</role>
+        <department>Finance</department>
+        <salary>55000</salary>
+    </employee>
+    <employee>
+        <id>104</id>
+        <name>Emily White</name>
+        <role>Designer</role>
+        <department>Creative</department>
+        <salary>50000</salary>
+    </employee>
+    <employee>
+        <id>105</id>
+        <name>Michael Johnson</name>
+        <role>Sales Executive</role>
+        <department>Sales</department>
+        <salary>45000</salary>
+    </employee>
+</employees>

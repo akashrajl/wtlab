@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Parking Management System</h1>
+        <form id="parkingForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <select id="age" name="age" required>
+                    <option value="">Select Age</option>
+                    <!-- Generate options for age -->
+                    <script>
+                        for (let i = 18; i <= 100; i++) {
+                            document.write(`<option value="${i}">${i}</option>`);
+                        }
+                    </script>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input type="number" id="contact" name="contact" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Mail ID:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="vehicleModel">Vehicle Model:</label>
+                <input type="text" id="vehicleModel" name="vehicleModel" required>
+            </div>
+            <div class="form-group">
+                <label for="vehicleType">Vehicle Type:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="vehicleType" value="car" required> Car</label>
+                    <label><input type="radio" name="vehicleType" value="bike" required> Bike</label>
+                    <label><input type="radio" name="vehicleType" value="truck" required> Truck</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="parkingTimeFrom">Parking Time From:</label>
+                <input type="datetime-local" id="parkingTimeFrom" name="parkingTimeFrom" required>
+            </div>
+            <div class="form-group">
+                <label for="parkingTimeTo">Parking Time To:</label>
+                <input type="datetime-local" id="parkingTimeTo" name="parkingTimeTo" required>
+            </div>
+            <div class="form-group">
+                <label for="parkingFee">Parking Fee:</label>
+                <input type="number" id="parkingFee" name="parkingFee" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
