@@ -20,3 +20,15 @@ Installation software for WTLab - IT dept
                     ng serve
 
 8. VSCode:          https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user
+
+FOR WEB SERVICE 
+
+https://archive.apache.org/dist/netbeans/netbeans-installers/15/Apache-NetBeans-15-bin-windows-x64.exe
+netbeans 15
+
+https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.40.0.msi
+MySQL installer for windows
+
+https://downloads.mysql.com/archives/get/p/3/file/mysql-connector-java-8.0.24.zip
+MySQL connector for java
+
