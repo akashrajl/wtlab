@@ -32,3 +32,5 @@ MySQL installer for windows
 https://downloads.mysql.com/archives/get/p/3/file/mysql-connector-java-8.0.24.zip
 MySQL connector for java
 
+https://drive.google.com/file/d/1322HaIdturmAXogoAyod7RzEfRm0gjDo/view?usp=drive_link
+JDK 1.8
